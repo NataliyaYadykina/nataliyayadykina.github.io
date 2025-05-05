@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./OpenSans-SemiBold.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.video_bg {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 7.3vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.text_span {
+  background-color: #000;
+  color: #fff;
+  border: 0.5vw solid #000;
+  box-sizing: border-box;
+  box-shadow: 2vw 0vw 0 rgba(0, 0, 0, 1), -0.7vw 0vw 0 rgba(0, 0, 0, 1);
+}
+
+.cutout {
+  color: transparent;
+  border: 0.6vw solid #000;
+  box-sizing: border-box;
+  box-shadow: inset 0 3.5vw 0 rgba(0, 0, 0, 1),
+    inset 0 -2.4vw 0 rgba(0, 0, 0, 1), 0vw 2vw 0 rgba(0, 0, 0, 1);
+}
+
+.mobile {
+  display: none;
+}
+
+.path1 {
+  width: 32vw;
+}
+
+.path4 {
+  width: 14vw;
+}
+
+.path5 {
+  width: 20.5vw;
+}
+
+.path6 {
+  width: 56vw;
+  box-shadow: inset -1vw 3.5vw 0 rgba(0, 0, 0, 1),
+    inset 0 -2.4vw 0 rgba(0, 0, 0, 1), 2vw 0 0 rgba(0, 0, 0, 1);
+  /* box-shadow: inset -1vw 3.5vw 0 rgba(0, 0, 0, 1), 2vw 0 0 rgba(0, 0, 0, 1); */
+}
+
+.black {
+  width: 100%;
+  background-color: #000;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .video_bg {
+    width: 250%;
+  }
+
+  .text {
+    font-size: 11vw;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .cutout {
+    box-shadow: inset 0 5.5vw 0 rgba(0, 0, 0, 1),
+      inset 0 -7.4vw 0 rgba(0, 0, 0, 1), 0vw 2vw 0 rgba(0, 0, 0, 1);
+  }
+
+  .path1 {
+    width: 42vw;
+    box-shadow: inset -2vw 5.5vw 0 rgba(0, 0, 0, 1),
+      inset 0 -7.4vw 0 rgba(0, 0, 0, 1), 1vw 0vw 0 rgba(0, 0, 0, 1);
+  }
+
+  .path2 {
+    width: 56vw;
+  }
+
+  .path3 {
+    width: 26vw;
+  }
+
+  .correct {
+    box-shadow: 5vw 0vw 0 rgba(0, 0, 0, 1), -0.7vw 0vw 0 rgba(0, 0, 0, 1);
+  }
+
+  .path5 {
+    width: 23vw;
+  }
+
+  .path6 {
+    width: 34vw;
+    box-shadow: inset -1vw 5.5vw 0 rgba(0, 0, 0, 1),
+      inset 0 -7.4vw 0 rgba(0, 0, 0, 1), 1vw 0vw 0 rgba(0, 0, 0, 1);
+  }
+}
