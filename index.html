@@ -1,591 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend-разработчик | Наталья Ядыкина</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Frontend Portfolio — React / JS / Tilda</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title animate-on-scroll" style="animation-delay: 0.3s">
-          Наталья Ядыкина
-        </h1>
-        <h2
-          class="hero-subtitle animate-on-scroll"
-          style="animation-delay: 0.6s"
-        >
-          Frontend Developer <br />
-          <span style="color: orange"
-            >Данная страница в разработке... инфо - "lorem"</span
-          >
-        </h2>
-        <p
-          class="hero-description animate-on-scroll"
-          style="animation-delay: 0.9s"
-        >
-          Создаю интерактивные и адаптивные интерфейсы
-        </p>
-        <a
-          href="#contact"
-          class="hero-button animate-on-scroll"
-          style="animation-delay: 1.2s"
-          >Портфолио</a
-        >
-      </div>
-      <div class="hero-image">
-        <img src="./img/photo.JPG" alt="Фото разработчика" class="avatar" />
-      </div>
-    </section>
 
-    <section class="about">
-      <div class="about-content">
-        <h2 class="about-title animate-on-scroll">Обо мне</h2>
+  <body class="page">
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <div class="profile">
+          <div class="profile__photo"></div>
 
-        <div class="about-section">
-          <h3 class="about-subtitle animate-on-scroll">Кто я</h3>
-          <p class="about-text animate-on-scroll">
-            Frontend-разработчик с 3-летним опытом создания современных
-            веб-приложений. Специализируюсь на React-экосистеме, уделяю внимание
-            производительности, доступности и чистому коду. Люблю превращать
-            сложные задачи в элегантные решения.
-          </p>
-        </div>
+          <div class="profile__info">
+            <h1 class="profile__name">Наталья Ядыкина</h1>
+            <p class="profile__role">Frontend-разработчик (React)</p>
 
-        <div class="about-section">
-          <h3 class="about-subtitle animate-on-scroll">Технические навыки</h3>
-          <div class="skills-flex">
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 0.2s"
-              >HTML5</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 0.4s"
-              >CSS3/SASS</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 0.6s"
-              >JavaScript (ES6+)</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 0.8s"
-              >TypeScript</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 1s"
-              >React</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 1.2s"
-              >Redux</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 1.4s"
-              >Next.js</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 1.6s"
-              >Git</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 1.8s"
-              >Webpack</span
-            >
-            <span
-              class="skill-tag animate-on-scroll"
-              style="animation-delay: 2s"
-              >REST API</span
-            >
+            <div class="profile__contacts">
+              <a
+                class="profile__contact"
+                href="mailto:nataliya.yadykina@yandex.ru"
+                >nataliya.yadykina@yandex.ru</a
+              >
+              <a
+                class="profile__contact"
+                href="https://t.me/nataliyadykina"
+                target="_blank"
+                >Telegram</a
+              >
+              <a
+                class="profile__contact"
+                href="https://github.com/NataliyaYadykina"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+
+            <div class="profile-skills">
+              <div class="profile-skills__list">
+                <span class="profile-skills__item">HTML5</span>
+                <span class="profile-skills__item">CSS / SASS</span>
+                <span class="profile-skills__item">JavaScript</span>
+                <span class="profile-skills__item">TypeScript</span>
+                <span class="profile-skills__item">React</span>
+                <span class="profile-skills__item">Node.js</span>
+                <span class="profile-skills__item">Git</span>
+                <span class="profile-skills__item">REST API</span>
+                <span class="profile-skills__item">Адаптив</span>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="about-section">
-          <h3 class="about-subtitle animate-on-scroll">Мягкие навыки</h3>
-          <ul class="soft-skills">
-            <li class="animate-on-scroll">Коммуникабельность</li>
-            <li class="animate-on-scroll">Работа в команде</li>
-            <li class="animate-on-scroll">Тайм-менеджмент</li>
-            <li class="animate-on-scroll">Критическое мышление</li>
-            <li class="animate-on-scroll">Обучаемость</li>
-          </ul>
-        </div>
       </div>
-    </section>
+    </header>
 
-    <section class="experience">
-      <div class="experience-content">
-        <h2 class="experience-title animate-on-scroll">Опыт работы</h2>
+    <main class="content">
+      <section id="projects" class="section section--projects reveal">
+        <div class="container">
+          <h2 class="section__title">Портфолио</h2>
 
-        <div class="timeline">
-          <!-- Основная работа -->
-          <div
-            class="timeline-item animate-on-scroll"
-            style="animation-delay: 0.2s"
-          >
-            <div class="timeline-period">2022 - 2025</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-company">Digital Solutions Inc.</h3>
-              <p class="timeline-position">
-                Frontend Developer (React/TypeScript)
+          <div class="projects">
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/lux_fashion/"
+              target="_blank"
+            >
+              <h3 class="project-card__title">Интернет-магазин</h3>
+              <p class="project-card__about">
+                Верстка адаптивного интернет-магазина с каталогом, меню,
+                корзиной и фильтрами.
               </p>
-              <ul class="timeline-responsibilities">
-                <li>Разработка SPA-приложений на React и TypeScript</li>
-                <li>
-                  Оптимизация производительности (снизил время загрузки на 40%)
-                </li>
-                <li>Интеграция с REST API и WebSocket</li>
-                <li>Наставничество для junior-разработчиков</li>
-              </ul>
-            </div>
-          </div>
+              <p class="project-card__tech">HTML, CSS, JavaScript</p>
+            </a>
 
-          <!-- Предыдущая работа -->
-          <div
-            class="timeline-item animate-on-scroll"
-            style="animation-delay: 0.4s"
-          >
-            <div class="timeline-period">2020 - 2022</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-company">WebArt Studio</h3>
-              <p class="timeline-position">Junior Frontend Developer</p>
-              <ul class="timeline-responsibilities">
-                <li>Верстка адаптивных интерфейсов по макетам Figma</li>
-                <li>Разработка компонентов на Vue.js</li>
-                <li>Участие в код-ревью</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Фриланс -->
-          <div
-            class="timeline-item animate-on-scroll"
-            style="animation-delay: 0.6s"
-          >
-            <div class="timeline-period">2018 - 2020</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-company">Фриланс проекты</h3>
-              <p class="timeline-position">Frontend разработчик</p>
-              <ul class="timeline-responsibilities">
-                <li>Создание лендингов и корпоративных сайтов</li>
-                <li>Разработка кастомных WordPress тем</li>
-                <li>Интеграция платежных систем</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Pet-проекты -->
-          <div
-            class="timeline-item animate-on-scroll"
-            style="animation-delay: 0.8s"
-          >
-            <div class="timeline-period">2021 - 2025</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-company">Pet-проекты</h3>
-              <p class="timeline-position">Fullstack разработчик</p>
-              <ul class="timeline-responsibilities">
-                <li>Task Manager (React + Node.js + MongoDB)</li>
-                <li>E-learning платформа (Next.js + Firebase)</li>
-                <li>UI Kit библиотека компонентов (Storybook)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects">
-      <div class="projects-content">
-        <h2 class="projects-title animate-on-scroll">Портфолио</h2>
-
-        <div class="projects-grid">
-          <!-- Проект 1 -->
-          <div
-            class="project-card animate-on-scroll"
-            style="animation-delay: 0.3s"
-          >
-            <div class="project-image-container">
-              <img
-                src="./img/project1.png"
-                alt="Task Manager"
-                class="project-image"
-              />
-              <div class="project-links">
-                <a
-                  href="https://demo-taskmanager.com"
-                  target="_blank"
-                  class="project-link"
-                  >Демо</a
-                >
-                <a
-                  href="https://github.com/username/task-manager"
-                  target="_blank"
-                  class="project-link"
-                  >Код</a
-                >
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">Task Manager</h3>
-              <p class="project-description">
-                Приложение для управления задачами с drag-and-drop интерфейсом,
-                уведомлениями и статистикой.
-              </p>
-              <div class="project-techs">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Redux Toolkit</span>
-                <span>Firebase</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Проект 2 -->
-          <div
-            class="project-card animate-on-scroll"
-            style="animation-delay: 0.6s"
-          >
-            <div class="project-image-container">
-              <img
-                src="./img/project2.jpg"
-                alt="E-commerce"
-                class="project-image"
-              />
-              <div class="project-links">
-                <a
-                  href="https://demo-ecommerce.com"
-                  target="_blank"
-                  class="project-link"
-                  >Демо</a
-                >
-                <a
-                  href="https://github.com/username/e-commerce"
-                  target="_blank"
-                  class="project-link"
-                  >Код</a
-                >
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">E-commerce Platform</h3>
-              <p class="project-description">
-                Полнофункциональный интернет-магазин с корзиной, фильтрами и
-                платежной системой.
-              </p>
-              <div class="project-techs">
-                <span>Next.js</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>Stripe</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Проект 3 -->
-          <div
-            class="project-card animate-on-scroll"
-            style="animation-delay: 0.9s"
-          >
-            <div class="project-image-container">
-              <img
-                src="./img/project3.jpg"
-                alt="UI Kit"
-                class="project-image"
-              />
-              <div class="project-links">
-                <a
-                  href="https://demo-ui-kit.com"
-                  target="_blank"
-                  class="project-link"
-                  >Демо</a
-                >
-                <a
-                  href="https://github.com/username/ui-kit"
-                  target="_blank"
-                  class="project-link"
-                  >Код</a
-                >
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-name">UI Component Library</h3>
-              <p class="project-description">
-                Библиотека переиспользуемых компонентов с документацией на
-                Storybook.
-              </p>
-              <div class="project-techs">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Storybook</span>
-                <span>SCSS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="education">
-      <div class="education-content">
-        <h2 class="education-title animate-on-scroll">
-          Образование и сертификации
-        </h2>
-
-        <div class="education-container">
-          <!-- Основное образование -->
-          <div
-            class="education-block animate-on-scroll"
-            style="animation-delay: 0.2s"
-          >
-            <h3 class="education-block-title">📚 Основное образование</h3>
-
-            <div class="education-item">
-              <div class="education-period">2016 - 2020</div>
-              <div class="education-dot"></div>
-              <div class="education-details">
-                <h4 class="education-institution">
-                  Санкт-Петербургский Политехнический Университет
-                </h4>
-                <p class="education-specialty">
-                  Прикладная информатика в дизайне
-                </p>
-                <p class="education-grade">Бакалавр</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Курсы -->
-          <div
-            class="education-block animate-on-scroll"
-            style="animation-delay: 0.4s"
-          >
-            <h3 class="education-block-title">🎓 Профессиональные курсы</h3>
-
-            <div class="education-item">
-              <div class="education-period">2021</div>
-              <div class="education-dot"></div>
-              <div class="education-details">
-                <h4 class="education-institution">Яндекс Практикум</h4>
-                <p class="education-specialty">Frontend-разработчик</p>
-                <p class="education-duration">10 месяцев</p>
-              </div>
-            </div>
-
-            <div class="education-item">
-              <div class="education-period">2022</div>
-              <div class="education-dot"></div>
-              <div class="education-details">
-                <h4 class="education-institution">Stepik</h4>
-                <p class="education-specialty">Продвинутый JavaScript</p>
-                <p class="education-duration">120 часов</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Сертификаты -->
-          <div
-            class="education-block animate-on-scroll"
-            style="animation-delay: 0.6s"
-          >
-            <h3 class="education-block-title">🏆 Сертификаты</h3>
-
-            <div class="certificates-grid">
-              <a href="#" class="certificate-card" target="_blank">
-                <div class="certificate-image">
-                  <img src="./img/cert1.jpg" alt="Сертификат React" />
-                </div>
-                <p class="certificate-name">React - Полное руководство</p>
-              </a>
-
-              <a href="#" class="certificate-card" target="_blank">
-                <div class="certificate-image">
-                  <img src="./img/cert2.png" alt="Сертификат TypeScript" />
-                </div>
-                <p class="certificate-name">TypeScript Fundamentals</p>
-              </a>
-
-              <a href="#" class="certificate-card" target="_blank">
-                <div class="certificate-image">
-                  <img src="./img/cert1.jpg" alt="Сертификат Web Design" />
-                </div>
-                <p class="certificate-name">Advanced Web Design</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-footer" id="contact">
-      <div class="contact-content">
-        <h2 class="contact-title animate-on-scroll">Контакты</h2>
-
-        <div class="contact-items">
-          <!-- Email -->
-          <div
-            class="contact-item animate-on-scroll"
-            style="animation-delay: 0.2s"
-          >
-            <svg class="contact-icon" viewBox="0 0 24 24">
-              <path
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                fill="currentColor"
-              />
-              <path d="M22 6l-10 7L2 6" fill="currentColor" />
-            </svg>
-            <a href="mailto:nataliya.yadykina@yandex.ru" class="contact-link"
-              >nataliya.yadykina@yandex.ru</a
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/test_yandex/"
+              target="_blank"
             >
-          </div>
+              <h3 class="project-card__title">Лендинг - Шахматы</h3>
+              <p class="project-card__about">
+                Адаптивный лендинг с анимацией и интерактивами на HTML/CSS/JS.
+              </p>
+              <p class="project-card__tech">HTML, CSS, JavaScript</p>
+            </a>
 
-          <!-- Телеграм -->
-          <div
-            class="contact-item animate-on-scroll"
-            style="animation-delay: 0.3s"
-          >
-            <svg class="contact-icon" viewBox="0 0 24 24">
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-                fill="currentColor"
-              />
-              <path
-                d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"
-                fill="currentColor"
-              />
-            </svg>
-            <a href="https://t.me/" target="_blank" class="contact-link">@</a>
-          </div>
-
-          <!-- GitHub -->
-          <div
-            class="contact-item animate-on-scroll"
-            style="animation-delay: 0.4s"
-          >
-            <svg class="contact-icon" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.017C2 16.417 4.865 20.183 8.839 21.529C9.339 21.613 9.521 21.326 9.521 21.075C9.521 20.851 9.513 20.065 9.508 19.252C6.726 19.932 6.139 17.963 6.139 17.963C5.684 16.81 5.029 16.504 5.029 16.504C4.121 15.911 5.098 15.926 5.098 15.926C6.102 15.993 6.629 16.949 6.629 16.949C7.521 18.492 8.975 18.014 9.539 17.757C9.631 17.11 9.889 16.67 10.174 16.42C7.954 16.166 5.62 15.311 5.62 11.488C5.62 10.397 6.01 9.489 6.649 8.793C6.546 8.541 6.202 7.524 6.747 6.148C6.747 6.148 7.586 5.887 9.485 7.174C10.376 6.938 11.324 6.82 12.272 6.818C13.22 6.82 14.168 6.938 15.06 7.174C16.958 5.887 17.797 6.148 17.797 6.148C18.342 7.524 17.998 8.541 17.895 8.793C18.538 9.489 18.925 10.397 18.925 11.488C18.925 15.322 16.585 16.163 14.358 16.412C14.696 16.723 15 17.33 15 18.253C15 19.592 14.986 20.682 14.986 21.075C14.986 21.329 15.166 21.62 15.676 21.529C19.135 20.183 22 16.418 22 12.017C22 6.484 17.522 2 12 2Z"
-                fill="currentColor"
-              />
-            </svg>
-            <a href="https://github.com/" target="_blank" class="contact-link"
-              >github.com/</a
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/realty/"
+              target="_blank"
             >
-          </div>
+              <h3 class="project-card__title">Недвижимость</h3>
+              <p class="project-card__about">
+                Лендинг агентства недвижимости. Чистый HTML/CSS/JS.
+              </p>
+              <p class="project-card__tech">HTML, CSS, JavaScript</p>
+            </a>
 
-          <!-- LinkedIn -->
-          <div
-            class="contact-item animate-on-scroll"
-            style="animation-delay: 0.5s"
-          >
-            <svg class="contact-icon" viewBox="0 0 24 24">
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                fill="currentColor"
-              />
-              <rect x="2" y="9" width="4" height="12" fill="currentColor" />
-              <circle cx="4" cy="4" r="2" fill="currentColor" />
-            </svg>
-            <a href="https://linkedin.com/" target="_blank" class="contact-link"
-              >linkedin.com/</a
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/notesJS/"
+              target="_blank"
             >
+              <h3 class="project-card__title">notesJS</h3>
+              <p class="project-card__about">
+                Простое приложение для добавления, редактирования и удаления
+                заметок.
+              </p>
+              <p class="project-card__tech">HTML, CSS, JS, LocalStorage</p>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/stickersJS/"
+              target="_blank"
+            >
+              <h3 class="project-card__title">stickersJS</h3>
+              <p class="project-card__about">
+                Приложение для создания визуальных заметок-стикеров с выбором
+                цветов и статусом выполнения.
+              </p>
+              <p class="project-card__tech">HTML, CSS, JS, LocalStorage</p>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://nataliyayadykina.github.io/todolistJS/"
+              target="_blank"
+            >
+              <h3 class="project-card__title">todolistJS</h3>
+              <p class="project-card__about">
+                Список для добавления, редактирования и удаления задач с
+                локальным хранилищем.
+              </p>
+              <p class="project-card__tech">HTML, CSS, JS, LocalStorage</p>
+            </a>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div
-          class="social-links animate-on-scroll"
-          style="animation-delay: 0.6s"
-        >
-          <a
-            href="https://t.me/"
-            class="social-link"
-            target="_blank"
-            aria-label="Telegram"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-              <path
-                d="M8 13L12 11L16 18L19 7L5 14L8 13Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://github.com/"
-            class="social-link"
-            target="_blank"
-            aria-label="GitHub"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.017C2 16.417 4.865 20.183 8.839 21.529C9.339 21.613 9.521 21.326 9.521 21.075C9.521 20.851 9.513 20.065 9.508 19.252C6.726 19.932 6.139 17.963 6.139 17.963C5.684 16.81 5.029 16.504 5.029 16.504C4.121 15.911 5.098 15.926 5.098 15.926C6.102 15.993 6.629 16.949 6.629 16.949C7.521 18.492 8.975 18.014 9.539 17.757C9.631 17.11 9.889 16.67 10.174 16.42C7.954 16.166 5.62 15.311 5.62 11.488C5.62 10.397 6.01 9.489 6.649 8.793C6.546 8.541 6.202 7.524 6.747 6.148C6.747 6.148 7.586 5.887 9.485 7.174C10.376 6.938 11.324 6.82 12.272 6.818C13.22 6.82 14.168 6.938 15.06 7.174C16.958 5.887 17.797 6.148 17.797 6.148C18.342 7.524 17.998 8.541 17.895 8.793C18.538 9.489 18.925 10.397 18.925 11.488C18.925 15.322 16.585 16.163 14.358 16.412C14.696 16.723 15 17.33 15 18.253C15 19.592 14.986 20.682 14.986 21.075C14.986 21.329 15.166 21.62 15.676 21.529C19.135 20.183 22 16.418 22 12.017C22 6.484 17.522 2 12 2Z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://linkedin.com/"
-            class="social-link"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <rect
-                x="2"
-                y="9"
-                width="4"
-                height="12"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle
-                cx="4"
-                cy="4"
-                r="2"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <small class="footer__copy">
+          © <span id="year"></span> Наталья Ядыкина — Frontend Developer
+        </small>
       </div>
+    </footer>
 
-      <footer class="footer animate-on-scroll" style="animation-delay: 0.7s">
-        <p class="footer-text">© 2023 Наталья Ядыкина. Все права защищены.</p>
-        <p class="footer-text">Сделано с <span class="heart">❤️</span></p>
-      </footer>
-    </section>
-
-    <script src="./scripts.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
