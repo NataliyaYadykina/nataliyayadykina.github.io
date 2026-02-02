@@ -1,0 +1,150 @@
+:root {
+  --heading-orange: #e19973;
+  --orange-light: #fe8b32;
+  --orange-dark: #da785d;
+  --blue: #4f7290;
+}
+html {
+  scroll-behavior: smooth;
+}
+.mlq_blue_color {
+  color: var(--blue);
+}
+.mlq_orange_color {
+  color: var(--orange-light);
+}
+.mlq_bg_orange {
+  background-color: var(--heading-orange);
+}
+.mlq_tg {
+  filter: drop-shadow(0 0 6px rgba(54, 174, 226, 0.55));
+  -webkit-filter: drop-shadow(0 0 6px rgba(54, 174, 226, 0.55));
+  transition: filter 0.3s ease;
+}
+.mlq_wa {
+  filter: drop-shadow(0 0 6px rgba(28, 215, 66, 0.55));
+  -webkit-filter: drop-shadow(0 0 6px rgba(28, 215, 66, 0.55));
+  transition: filter 0.3s ease;
+}
+.mlq_heading {
+  color: var(--heading-orange);
+  font-weight: 900;
+}
+.mlq_btn_gradient {
+  background: var(--orange-light);
+  background: -moz-linear-gradient(
+    left,
+    var(--orange-light) 0%,
+    var(--orange-dark) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    var(--orange-light) 0%,
+    var(--orange-dark) 100%
+  );
+  background: linear-gradient(
+    to right,
+    var(--orange-light) 0%,
+    var(--orange-dark) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient(
+        startColorstr=var(--orange-light),
+        endColorstr=var(--orange-dark),
+        GradientType=1
+      );
+  background-size: contain;
+}
+section {
+  padding: 120px 0;
+}
+li::marker {
+  color: var(--orange-light);
+}
+.mlq_btn {
+  transition: all 0.3s ease;
+}
+.mlq_btn:hover {
+  transform: scale(1.03);
+}
+.mlq_border {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffd6b6;
+}
+.header {
+  background: url("../img/bg_head.jpg") no-repeat center center;
+  background-size: cover;
+}
+.mlq_bg_card {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+.stats-overlap {
+  position: relative;
+  z-index: 10;
+  margin-top: -100px;
+}
+
+.stat-card {
+  background: url(../img/d.png);
+  background-size: cover;
+  min-height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+.mlq_btn_paints {
+  font-size: 0.8rem;
+  z-index: 11;
+}
+.mlq_collapse {
+  position: absolute;
+  z-index: 1;
+}
+.mlq_line {
+  border-top: 5px solid #ffd6b6;
+}
+.materials .btn-outline-info.focus,
+.btn-outline-info:focus {
+  background-color: #edfbfe;
+  box-shadow: none;
+}
+.materials .btn-outline-info:hover {
+  background-color: #edfbfe;
+  color: var(--blue);
+}
+#collapseExample {
+  min-width: 450px;
+}
+.prices {
+  background: url(../img/bg_tarif.jpg) no-repeat center center;
+  background-size: cover;
+}
+.mlq_card_header {
+  background: var(--blue);
+}
+.mlq_opacity {
+  opacity: 0.5;
+}
+.faq-arrow-icon {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-90deg);
+}
+.btn-link:not(.collapsed) .faq-arrow-icon {
+  transform: rotate(0deg);
+}
+.btn-link:focus,
+.btn-link:active {
+  text-decoration: none;
+}
+#faqAccordion .card {
+  border-bottom: 5px solid #ffd6b6;
+}
+#faqAccordion .card:not(:last-of-type) {
+  border-bottom: 5px solid #ffd6b6;
+}
+footer {
+  padding-bottom: 150px;
+}
