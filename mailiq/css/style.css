@@ -4,8 +4,27 @@
   --orange-dark: #da785d;
   --blue: #4f7290;
 }
+@font-face {
+  font-family: "Bernier"; /* Имя, которое ты будешь использовать в коде */
+  src: url("../font/BERNIERDISTRESSED-REGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Позволяет тексту отображаться стандартным шрифтом, пока грузится твой */
+}
+.mlq_title_font {
+  font-family: "Bernier", sans-serif;
+}
+.mlq_title_lg {
+  font-size: 5.5rem;
+}
+.mlq_title_md {
+  font-size: 4.5rem;
+}
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: "PT Sans", sans-serif;
 }
 .mlq_blue_color {
   color: var(--blue);
@@ -28,7 +47,6 @@ html {
 }
 .mlq_heading {
   color: var(--heading-orange);
-  font-weight: 900;
 }
 .mlq_btn_gradient {
   background: var(--orange-light);
