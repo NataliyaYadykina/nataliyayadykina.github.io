@@ -95,12 +95,14 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 24px;
   background: #fff;
   border-radius: 14px;
@@ -130,6 +132,25 @@ body {
   font-size: 14px;
   color: #1d45b9;
   font-weight: 600;
+}
+
+.project-card__links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card__link {
+  padding: 8px 20px;
+  background: #eef3ff;
+  color: #1d45b9;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card__link:hover {
+  box-shadow: 0 0 5px rgba(29, 69, 185, 0.2);
 }
 
 .footer {
